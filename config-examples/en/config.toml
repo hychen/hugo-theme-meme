@@ -1099,6 +1099,9 @@ uglyURLs = false
 
     enableChinesePunctuationGlyphCorrection = false
 
+    ## Beautify Chinese content layout by using Heti（https://sivan.github.io/heti/）
+    ensbleHeti = false
+
 
     ######################################
     # Post Copyright

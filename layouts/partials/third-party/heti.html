@@ -1,0 +1,13 @@
+{{ if .Site.Params.enableHeti }}
+<!-- 赫蹏（https://sivan.github.io/heti/）是專為中文排版的 CSS 增強。 -->
+<link rel="stylesheet" href="//unpkg.com/heti/umd/heti.min.css">
+
+{{ if .Site.Params.enableHetiJs | default true }}
+<!-- 啟用中西文混排美化與標點擠壓增強腳本 -->
+<script src="//unpkg.com/heti/umd/heti-addon.min.js"></script>
+<script>
+  const heti = new Heti('.heti');
+  heti.autoSpacing();
+</script>
+{{ end }}
+{{ end }}

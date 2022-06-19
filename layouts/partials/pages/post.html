@@ -34,7 +34,13 @@
                 {{- partial "utils/toc.html" . -}}
             {{- end -}}
 
-            <div class="post-body e-content">
+            <div
+            {{ if .Site.Params.enableHeti }}
+              class="e-content heti"
+            {{ else }}
+              class="post-body e-content"
+            {{ end }}
+            >
                 {{ partial "utils/content.html" . }}
             </div>
 
